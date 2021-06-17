@@ -276,7 +276,7 @@ if ($_POST['createUser']) {
         window.location.reload()
     }
     document.getElementById('btn').onclick = function () {
-        alert('管理员账号：admin   密码：222222，请登陆后修改密码')
+        alert('管理员账号：admin   密码：222222，请登陆后修改密码,配置完成后请删除install文件夹')
     }
 </script>
 </body>

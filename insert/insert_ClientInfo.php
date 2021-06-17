@@ -1,7 +1,10 @@
 <?php
 session_start();
 header('Access-Control-Allow-Origin: *');
-
+// 权限不足
+if ($_SESSION['power'] === 2){
+    die('9');
+}
 $dbHost = $_SESSION['dbHost'];
 $dbUser = $_SESSION['dbUser'];
 $dbPwd = $_SESSION['dbPwd'];
