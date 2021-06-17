@@ -12,7 +12,7 @@ $tbClient = $_SESSION['tbClient'];
 
 
 $conn = mysqli_connect($dbHost, $dbUser, $dbPwd, $dbName);
-$sql = "select * from $dbName.$tbManage";
+$sql = "select * from $dbName.$tbManage order by id";
 $rst=mysqli_query($conn,$sql);
 $res = array();
 while($row = mysqli_fetch_assoc($rst)) {
